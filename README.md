@@ -1,0 +1,2 @@
+# UproszczoneGO
+projekt
