@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1528736216 source:d:\it\projekty\projekt na 2sem\grastrategiczna3\main.cpp
+	<iostream>
+	"plansza.h"
+	<windows.h>
+
+1528546239 d:\it\projekty\projekt na 2sem\grastrategiczna3\plansza.h
+	<iostream>
+
+1528546331 source:d:\it\projekty\projekt na 2sem\grastrategiczna3\plansza.cpp
+	"plansza.h"
+
+1528732132 source:d:\it\projekty\projekt na 2sem\grastrategiczna3\baza.cpp
+	<iostream>
+	"plansza.h"
+	<windows.h>
+
+1528570546 d:\it\projekty\projekt na 2sem\grastrategiczna3\baza.h
+	<iostream>
+
