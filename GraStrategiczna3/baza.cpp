@@ -2,130 +2,215 @@
 #include "plansza.h"
 #include <windows.h>
 using namespace std;
-/*
-baza::baza(};
+
+/*baza::baza(};
 {
+    int wiersz,szerokosc;
+    char symbol;
+    string wiersz1, w2,w3,w4,w5 ,w6,w7,w8;
     //ctor
 }
 
 baza::~baza()
 {
     //dtor
-}*/
-
-int movmentN(int wysokosc, int szerokosc, char symbol, string wiersz1, string w2, string w3, string w4, string w5 , string w6, string w7, string w8) // poruszanie sie gora
+}
+*/
+int movmentN(int wiersz, int szerokosc, char symbol, string wiersz1, string w2, string w3, string w4, string w5 , string w6, string w7, string w8) // poruszanie sie gora
 {
-switch(wysokosc)
+switch(wiersz)
          {
-             case 2:
-                 {
-                     w2[szerokosc]=symbol;
-                     wiersz1[szerokosc]='X';
-                     return wysokosc = 2;
 
-                 }
-             break;
-             case 3:
+        case 2:
                  {
-                     w3[szerokosc]=symbol;
-                     w2[szerokosc]='X';
-                     return wysokosc = 3;
+                     if (w2[szerokosc]=symbol) // jesli w wierszu 2, symbol w indeksie=szerokosc, jest symbolem gracza to wiersz 1 w tym samym indeksie przyjmie symbol.
+                        {
+                            wiersz1[szerokosc]=symbol;
+                            return wiersz = 1;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
-             case 4:
+
+        case 3:
                  {
-                     w4[szerokosc]=symbol;
-                     w3[szerokosc]='X';
-                     return wysokosc = 4;
+                     if (w3[szerokosc]=symbol)
+                        {
+                            w2[szerokosc]=symbol;
+                            return wiersz = 2;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
-             case 5:
+
+        case 4:
                  {
-                     w5[szerokosc]=symbol;
-                     w4[szerokosc]='X';
-                     return wysokosc = 5;
+                     if (w4[szerokosc]=symbol)
+                        {
+                            w3[szerokosc]=symbol;
+                            return wiersz = 3;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
-             case 6:
+        case 5:
                  {
-                     w6[szerokosc]=symbol;
-                     w5[szerokosc]='X';
-                     return wysokosc = 6;
+                     if (w5[szerokosc]=symbol)
+                        {
+                           w4[szerokosc]=symbol;
+                            return wiersz = 4;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
-             case 7:
+        case 6:
                  {
-                     w7[szerokosc]=symbol;
-                     w6[szerokosc]='X';
-                     return wysokosc = 7;
+                     if (w6[szerokosc]=symbol)
+                        {
+                           w5[szerokosc]=symbol;
+                            return wiersz = 5;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
-             case 8:
+        case 7:
                  {
-                     w8[szerokosc]=symbol;
-                     w7[szerokosc]='X';
-                     return wysokosc = 8;
+                     if (w7[szerokosc]=symbol)
+                        {
+                           w6[szerokosc]=symbol;
+                            return wiersz = 6;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
+        case 8:
+                 {
+                     if (w8[szerokosc]=symbol)
+                        {
+                           w7[szerokosc]=symbol;
+                            return wiersz = 7;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
 
              default: cout<<"Nie ma takiej opcji"<<endl;
-         }
+            }
+        }
 }
-
-int movmentS(int wysokosc, int szerokosc, char symbol, string wiersz1, string w2, string w3, string w4, string w5 , string w6, string w7, string w8) // poruszanie sie dol
+// tablica gorna to wiersz 1
+int movmentS(int wiersz, int szerokosc, char symbol, string wiersz1, string w2, string w3, string w4, string w5 , string w6, string w7, string w8) // poruszanie sie dol
 {
-switch(wysokosc)
+switch(wiersz)
          {
              case 1:
                  {
-                     wiersz1[szerokosc]=symbol;
-                     w2[szerokosc]='X';
-                     return wysokosc = 2;
-
+                     if (wiersz1[szerokosc]=symbol)
+                        {
+                            w2[szerokosc]=symbol;
+                            return wiersz = 2;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
-             case 2:
+            case 2:
                  {
-                     w2[szerokosc]=symbol;
-                     w3[szerokosc]='X';
-                     return wysokosc = 3;
+                     if (w2[szerokosc]=symbol)
+                        {
+                            w3[szerokosc]=symbol;
+                            return wiersz = 3;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
              case 3:
                  {
-                     w3[szerokosc]=symbol;
-                     w4[szerokosc]='X';
-                     return wysokosc = 4;
+                     if (w3[szerokosc]=symbol)
+                        {
+                            w4[szerokosc]=symbol;
+                            return wiersz = 4;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
              case 4:
                  {
-                     w4[szerokosc]=symbol;
-                     w5[szerokosc]='X';
-                     return wysokosc = 5;
+                     if (w4[szerokosc]=symbol)
+                        {
+                            w5[szerokosc]=symbol;
+                            return wiersz = 5;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
              case 5:
                  {
-                     w5[szerokosc]=symbol;
-                     w6[szerokosc]='X';
-                     return wysokosc = 6;
+                     if (w5[szerokosc]=symbol)
+                        {
+                            w6[szerokosc]=symbol;
+                            return wiersz = 6;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
              break;
              case 6:
                  {
-                     w6[szerokosc]=symbol;
-                     w7[szerokosc]='X';
-                     return wysokosc = 7;
+                     if (w6[szerokosc]=symbol)
+                        {
+                            w7[szerokosc]=symbol;
+                            return wiersz = 7;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
-             break;
              case 7:
                  {
-                     w7[szerokosc]=symbol;
-                     w8[szerokosc]='X';
-                     return wysokosc = 8;
+                     if (w7[szerokosc]=symbol)
+                        {
+                            w8[szerokosc]=symbol;
+                            return wiersz = 8;
+                         }
+                     else
+                            {
+                            cout<<"nie mozliwe, tracisz ruch";
+                            break;}
                  }
-             break;
 
              default: cout<<"Nie ma takiej opcji"<<endl;
          }

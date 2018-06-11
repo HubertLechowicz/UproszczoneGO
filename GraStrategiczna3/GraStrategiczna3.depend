@@ -10,11 +10,13 @@
 1528546331 source:d:\it\projekty\projekt na 2sem\grastrategiczna3\plansza.cpp
 	"plansza.h"
 
-1528732132 source:d:\it\projekty\projekt na 2sem\grastrategiczna3\baza.cpp
+1528744386 source:d:\it\projekty\projekt na 2sem\grastrategiczna3\baza.cpp
 	<iostream>
 	"plansza.h"
 	<windows.h>
 
 1528570546 d:\it\projekty\projekt na 2sem\grastrategiczna3\baza.h
 	<iostream>
+
+1528737160 source:d:\it\projekty\projekt na 2sem\grastrategiczna3\todo.c
 

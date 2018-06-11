@@ -1,6 +1,7 @@
 #include <iostream>
 #include "plansza.h"
 #include <windows.h>
+#include <cstdio>
 using namespace std;
 
 
@@ -25,20 +26,23 @@ int main()
 start:
      cout<<"Wcisnij odpowiedni przycisk aby wybrac opcje"<<endl;
     cout<<"1. Nowa Gra"<<endl;
-    cout<<"2. Wyjdz z gry - gunwo nie zrobione jeszcze "<<endl;
+    cout<<"2. Wyjdz z gry "<<endl;
     cin>>wybor;
+    system("cls");
          switch(wybor)
          {
              case 1:
                  {
-                    system("cls");
-                     wiersz1[0]='X';
-                     w8[7]='O';
+                        wiersz1[0]='X';
+                        w8[7]='O';
+
+                     /*   baza gracz1 ("gracz",'X',1,1,0);
+                        baza gracz2 ("gracz",'O',1,1,7);*/
 
                      petla2:
+
                     cout<<"\t Ponizej znajduje sie plansza"<<endl;
                      cout<<endl<<"\t"<<opisgornyplanszy<<endl<<endl<<"A\t"<<wiersz1<<endl<<"B\t"<<w2<<endl<<"C\t"<<w3<<endl<<"D\t"<<w4<<endl<<"E\t"<<w5<<endl<<"F\t"<<w6<<endl<<"G\t"<<w7<<endl<<"H\t"<<w8<<endl;
-                     //tutaj gra sie zaczyna i bedzie petla, po zmianie danych komorek w stringach, tu wracac zeby dalej sprawdzic warunki zmiany na planszy
                      cout<<endl<<"        > Wpisz liczbe wyswietlana obok opcji zeby ja wykonac: "<<endl<<"\t 1.Porusz sie jednym ze swoich tokenow w gore"<<endl<<"\t 2.Porusz sie jednym ze swoich tokenow w dol"<<endl<<"\t 3.Porusz sie jednym ze swoich tokenow w lewo"<<endl<<"\t 4.Porusz sie jednym ze swoich tokenow w prawo"<<endl;
 
                      cin>>wybor;
@@ -47,6 +51,7 @@ start:
                      {
                          case 1:
                                     {
+                                     /*   gracz1 movmentN()*/
                                     cout<<"czy na pewno chcesz wyjsc? gunwo nie zrobione jeszcze"<<endl;
                                     cin>>wybor;
                                     }
