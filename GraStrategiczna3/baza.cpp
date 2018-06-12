@@ -12,18 +12,18 @@ using namespace std;
 }
 
 baza::~baza()
-{
+{ p
     //dtor
 }
 */
-int movmentN(int wiersz, int szerokosc, char symbol, string wiersz1, string w2, string w3, string w4, string w5 , string w6, string w7, string w8) // poruszanie sie gora
+int movmentN(int wiersz, int szerokosc, char symbol, string wiersz1, string w2, string w3, string w4, string w5 , string w6, string w7, string w8) // poruszanie sie do gory
 {
 switch(wiersz)
          {
 
         case 2:
                  {
-                     if (w2[szerokosc]=symbol) // jesli w wierszu 2, symbol w indeksie=szerokosc, jest symbolem gracza to wiersz 1 w tym samym indeksie przyjmie symbol.
+                     if (w2[szerokosc]=symbol)
                         {
                             wiersz1[szerokosc]=symbol;
                             return wiersz = 1;
@@ -118,7 +118,7 @@ switch(wiersz)
         }
 }
 // tablica gorna to wiersz 1
-int movmentS(int wiersz, int szerokosc, char symbol, string wiersz1, string w2, string w3, string w4, string w5 , string w6, string w7, string w8) // poruszanie sie dol
+int movmentS(int wiersz, int szerokosc, char symbol, string wiersz1, string w2, string w3, string w4, string w5 , string w6, string w7, string w8) // poruszanie sie  w dol
 {
 switch(wiersz)
          {
